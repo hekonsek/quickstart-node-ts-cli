@@ -1,0 +1,24 @@
+{
+  "name": "quickstart-node-ts-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "quickstart-node-ts-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "init": "npm install",
+    "build": "tsc",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "all": "npm run init && npm run build && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.3"
+  }
+}
