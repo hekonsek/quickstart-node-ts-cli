@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-"use strict";
-exports.__esModule = true;
-exports.SayHello = void 0;
+import chalk from "chalk";
+import boxen from "boxen";
 var SayHello = /** @class */ (function () {
     function SayHello(name) {
         this.name = name;
@@ -11,6 +10,16 @@ var SayHello = /** @class */ (function () {
     };
     return SayHello;
 }());
-exports.SayHello = SayHello;
+export { SayHello };
 var who = process.argv[2] || "world";
-console.log(new SayHello(who).sayHello());
+var msg = new SayHello(who).sayHello();
+var font = chalk.blue.underline;
+msg = font(msg);
+msg = boxen(msg, {
+    padding: 1,
+    margin: 1,
+    borderStyle: "round",
+    borderColor: "green",
+    backgroundColor: "#555555"
+});
+console.log(msg);
