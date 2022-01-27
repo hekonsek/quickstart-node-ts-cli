@@ -1,16 +1,7 @@
 #!/usr/bin/env node
 import chalk from "chalk";
 import boxen from "boxen";
-var SayHello = /** @class */ (function () {
-    function SayHello(name) {
-        this.name = name;
-    }
-    SayHello.prototype.sayHello = function () {
-        return "Hello " + this.name + "!";
-    };
-    return SayHello;
-}());
-export { SayHello };
+import { SayHello } from "./core.js";
 var who = process.argv[2] || "world";
 var msg = new SayHello(who).sayHello();
 var font = chalk.blue.underline;

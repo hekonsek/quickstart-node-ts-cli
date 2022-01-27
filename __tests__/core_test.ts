@@ -1,5 +1,5 @@
 import 'jest'
-import {SayHello} from "../src"
+import {SayHello} from "../src/core";
 
 describe('SayHello', () => {
     let instance: SayHello;

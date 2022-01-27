@@ -2,17 +2,7 @@
 
 import chalk from "chalk"
 import boxen from "boxen"
-
-export class SayHello {
-
-    constructor(public name: string) {
-    }
-
-    sayHello(): string {
-        return "Hello " + this.name + "!"
-    }
-
-}
+import {SayHello} from "./core.js";
 
 let who = process.argv[2] || "world"
 let msg = new SayHello(who).sayHello()
