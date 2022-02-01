@@ -1,6 +1,9 @@
 # Quickstart: Node command line tool (TypeScript)
 
-This is a template project for a command line (CLI) tool in Node and TypeScript.
+This is a template project for a command line (CLI) tool in Node and TypeScript. Includes commonly used CLI libraries:
+- **yargs** for command line parsing
+- **boxen** for drawing UI boxes
+- **chalk** for styling and coloring text
 
 ## Building
 
