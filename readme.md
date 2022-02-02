@@ -33,8 +33,14 @@ npm run test
 
 ## Installation
 
-To install the library into your project execute the following command:
+To install this CLI tool into your system execute the following command:
 
 ```
-npm install -g git+https://github.com/hekonsek/quickstart-node-ts-cli#v0.0.0
+npm install -g https://github.com/hekonsek/quickstart-node-ts-cli/tarball/0.0.0
+```
+
+Alternatively you can indicate a git commit instead of a release version: 
+
+```
+npm install -g git+https://github.com/hekonsek/quickstart-node-ts-cli#gitCommitHash
 ```
