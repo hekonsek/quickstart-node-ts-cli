@@ -5,6 +5,12 @@ This is a template project for a command line (CLI) tool in Node and TypeScript.
 - **boxen** for drawing UI boxes
 - **chalk** for styling and coloring text
 
+To create your new cli tool, just copy this project using the following command:
+
+```bash
+git clone https://github.com/hekonsek/quickstart-node-ts-cli myclitool
+```
+
 ## Building
 
 To init, build and test your tool execute:
